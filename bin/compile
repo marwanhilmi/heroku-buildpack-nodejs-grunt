@@ -152,7 +152,7 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
     npm install grunt-cli
     npm install grunt
     echo "-----> Found Gruntfile, running grunt heroku task"
-    CDN=$CDN S3_BUCKET=$S3_BUCKET NODE_ENV=$NODE_ENV $build_dir/node_modules/.bin/grunt heroku
+    CDN_URL=$CDN S3_BUCKET=$S3_BUCKET NODE_ENV=$NODE_ENV $build_dir/node_modules/.bin/grunt heroku
   else
     echo "-----> No Gruntfile (grunt.js, Gruntfile.js, Gruntfile.coffee) found"
   fi
